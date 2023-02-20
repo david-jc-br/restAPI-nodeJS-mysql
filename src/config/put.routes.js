@@ -1,5 +1,5 @@
 const express = require('express');
-const putRoutes = express.Router();
+const putRoutes = express.Router(); //Router() é uma classe no Express que permite criar objetos de roteador
 const connection = require('../connection/mysql-connection');
 const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json(); 

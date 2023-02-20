@@ -2,6 +2,10 @@ const express = require('express');
 const getRoutes = express.Router();
 const connection = require('../connection/mysql-connection');
 
+getRoutes.get('/', (req,res) => {
+    res.status(200).send('Restful API NodeJS - MySQL Working')
+})
+
 getRoutes.get('/people/:id', (req, res) => {
     const id = req.params.id;
 
